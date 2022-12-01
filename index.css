@@ -87,43 +87,58 @@ nav ul a{
 .navbox{
     height: 41px;
     width: 47%;
-  /*  border: 1px solid blue;*/
+   /* border: 1px solid blue;*/
     margin-top: 35px;
     position: absolute;
     margin-left: 16%;
-    
 }
-.search-box{
-    height: 64px;
-    width: 37%;
-  /*  border: 1px solid red;*/
-    position: relative;
-    margin-top: 39px;
-    margin-left: 62%;
+.search-nyka{
+    height:45px;
+    width: 21%;
+  /*  border:1px solid green;*/
+    position: absolute;
+    float: left;
+    margin-left:61%;
+    margin-top: 2%;
 }
 .searchtext{
     border-radius: 1px;
-    height: 42px;
-    width: 48%;
-    margin-top: 10px;
-    background-color:#f4f4f4;
+    height: 44px;
+    width: 92%;
+    margin-top: 5px;
+    background-color:#f4f4f4d5;
     border-style: none;
+    position: absolute;
 }
 .searchbtn{
     position:absolute;
-    right: 270px;
-    margin-top: 21px;
+    right: 29px;
+    margin-top: 18px;
 }
-
+.sign-in{
+    height:45px;
+    width: 17%;
+   /* border:1px solid red;*/
+    position: absolute;
+    margin-left:83%;
+    margin-top: 33px;
+}
+.button-1{
+    height:45px;
+    width: 42%;
+   /* border:1px solid blueviolet;*/
+    
+}
 .button{
     color:white;
-    margin-left: 41px;
+    margin-left: 1px;
     height: 42px;
-    width: 18%;
+    width: 98%;
     border-radius: 9px;
     font-size: 17px;
     background-color:rgb(252, 39, 121);
     border:none;
+    
 }
 .button{
     object-fit: cover;
@@ -136,9 +151,9 @@ nav ul a{
 }
 
 .fa-bag-shopping{
-   /* border: 1px solid green;*/
-    margin-top: 13px;
-    margin-left: 51px;
+  /*  border: 1px solid green;*/
+    margin-top: 5px;
+    margin-left:62px;
     position: absolute;
     color: black;
 }
@@ -146,10 +161,9 @@ nav ul a{
     height: 56px;
     width: 100%;
     border-top: 1px solid gainsboro;
-    background-color: red;
+   /* background-color: red;*/
     
-}
-.list{
+}.list{
     display: flex;
     justify-content: center;
     margin: 16px;
@@ -171,8 +185,9 @@ ul li a{
     width: 50%;
   /* background-color: #fc2779;*/
     position: absolute;
-     margin-left: 31%;
-   margin-top: -400%;
+    margin-left: 31%;
+    margin-top: -400%;
+    z-index: 100;
     visibility: hidden;
     background-image: url(https://cdn.grabon.in/gograbon/images/web-images/uploads/1668159182299/nykaa-coupons.jpg);
 }
@@ -543,11 +558,25 @@ footer{
 }
 
 /*Media screen*/
-@media only screen and (max-width:1600px){
-  /*  body {
+@media only screen and (max-width:1400px){
+  /* body {
         background-color: aqua  !important; 
     } */
+    .Logo {
+        margin-left:23px;
     }
+    .navbox {
+        margin-left:12%;
+    }
+    nav ul a{
+        margin-right: 37px;
+    }
+    #coupon{
+        margin-top:-404%;
+    }
+    
+    }
+    
     
 @media only screen and (max-width:1200px){
      /*  body {
@@ -564,7 +593,7 @@ footer{
             width: 41%;
             margin-left: 52%;
         }
-        
+
         
     @media only screen and (max-width:900px){
       /* body {
