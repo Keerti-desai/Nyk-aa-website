@@ -16,6 +16,7 @@ header{
     width: 100%;
   /*  background-color:purple;*/
 }
+
 #navbar{
   /* border: 1px solid red;*/
     height: 38px;
@@ -64,6 +65,52 @@ nav ul a{
     font-size: 23px;
     overflow: hidden;
 }
+/* ..........coupon-code............. */
+#coupon-header{
+    width: 100%;
+   /* border: 2px solid red;*/
+    position: absolute;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background: rgba(3, 2, 2, 0.562);
+    box-shadow: 0 8px 32px 0 rgb(31 38 135 / 37%);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.inner-container{
+    width: 60%;
+  /*  border: 2px solid green;*/
+    /* height: 84%; */
+    display: flex;
+    justify-content: center;
+}
+.inner-container .coupon{
+    width: 80%;
+    height: 100%;
+  /* border: 2px solid orangered;*/
+    position: relative;
+}
+.coupon img {
+    width: 100%;
+    margin-top: 136px;
+
+}
+#popupClose{
+width: 28px;
+height: 26px;
+right:0%;
+position:absolute;
+margin-top: 22%;
+cursor: pointer;
+color: #fc2779;
+border: none;
+
+}
+/* ..........coupon-code-end............. */
+ 
 
 
 .main{
@@ -95,13 +142,20 @@ nav ul a{
 .search-nyka{
     height:45px;
     width: 21%;
-  /*  border:1px solid green;*/
+   /*border:1px solid green;*/
     position: absolute;
     float: left;
-    margin-left:61%;
-    margin-top: 2%;
+    margin-left:59%;
+    margin-top: 33px;
 }
-.searchtext{
+.dropdown{
+    height: 44px;
+    width: 277px;
+    background-color:#f4f4f4d5;
+    border-radius: 1px;
+    border-color:#f4f4f4d5;
+}
+/*.searchtext{
     border-radius: 1px;
     height: 44px;
     width: 92%;
@@ -109,7 +163,7 @@ nav ul a{
     background-color:#f4f4f4d5;
     border-style: none;
     position: absolute;
-}
+}*/
 .searchbtn{
     position:absolute;
     right: 29px;
@@ -118,7 +172,7 @@ nav ul a{
 .sign-in{
     height:45px;
     width: 17%;
-   /* border:1px solid red;*/
+ /*  border:1px solid red; */
     position: absolute;
     margin-left:83%;
     margin-top: 33px;
@@ -126,7 +180,7 @@ nav ul a{
 .button-1{
     height:45px;
     width: 42%;
-   /* border:1px solid blueviolet;*/
+  /* border:1px solid blueviolet;*/
     
 }
 .button{
@@ -178,21 +232,6 @@ ul li a{
     margin: 20px;
     color: black;
     font-weight: 400;
-}
-/*coupon javascript*/
-#coupon{
-    height: 300px;
-    width: 50%;
-  /* background-color: #fc2779;*/
-    position: absolute;
-    margin-left: 31%;
-    margin-top: -400%;
-    z-index: 100;
-    visibility: hidden;
-    background-image: url(https://cdn.grabon.in/gograbon/images/web-images/uploads/1668159182299/nykaa-coupons.jpg);
-}
-button{
-    border: none;
 }
 
 
@@ -559,10 +598,10 @@ footer{
 
 /*Media screen*/
 @media only screen and (max-width:1400px){
-  /* body {
-        background-color: aqua  !important; 
-    } */
-    .Logo {
+    /* body {
+       background-color: aqua  !important; 
+    }  */
+    .Logo { 
         margin-left:23px;
     }
     .navbox {
@@ -571,17 +610,29 @@ footer{
     nav ul a{
         margin-right: 37px;
     }
-    #coupon{
+     #coupon{
         margin-top:-404%;
     }
-    
+     
     }
-    
+    @media only screen and (max-width:1280px){
+        /* body {
+            background-color: rgb(243, 243, 143)  !important; 
+        }  */
+        .navbox {
+            margin-left:8% ;
+        }
+        .list-1{
+            font-size: 0.8rem;
+        }
+
+       
+            }
     
 @media only screen and (max-width:1200px){
-     /*  body {
+       /* body {
             background-color: palevioletred  !important; 
-        } */
+        }  */
           
         nav ul a{
             margin-right: 28px;
@@ -596,10 +647,10 @@ footer{
 
         
     @media only screen and (max-width:900px){
-      /* body {
+       /* body {
                background-color: rgb(89, 115, 50)  !important; 
             }  */
-      .navbox{
+      .navbox{ 
         display:none ;
       }
       .Logo{
@@ -649,10 +700,11 @@ margin-left:40.5%;
 #image-container{
     margin-top: -8%;
 }
-#coupon{
+ #coupon{
     margin-top:-820%;
-}
+} 
 
 
 }
 }
+    

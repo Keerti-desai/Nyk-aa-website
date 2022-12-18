@@ -7,17 +7,28 @@
   <link href="https://play-lh.googleusercontent.com/JmUfuZGy7D9J4YESkbPZ32WrEGppbmFaSo-GkOzj_ZrzatV7LDDg9Q-ZxkD3KwGksXs" rel="icon">
   <link href="index.css" rel="stylesheet" type="text/css">
   <script src="https://kit.fontawesome.com/c4338603d0.js" crossorigin="anonymous"></script>
-  <script src="index.js"></script>
+  <!-- <script src="index.js"></script> -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
   <title>Buy Cosmetics Products & Beauty Online in India at Best Price | Nykaa</title>
 </head>
 
-  <body id="coupon-clr">
+  <body>
     
         <!--header section-->
         <header>
+          <!-- ..........Coupon-Code........... --> 
+          <div id="coupon-header">
+            <div class="inner-container">
+              <div class="coupon">
+                <img src="https://cdn.grabon.in/gograbon/images/web-images/uploads/1668159182299/nykaa-coupons.jpg" alt="nykaa">
+          <span id="popupClose"><i class="bi bi-x-square"></i></span>
+           
+          </div>
+      </div>
+  </div>
+        
           <div id="main-header">
             <div id="navbar">
               <nav>
@@ -46,20 +57,28 @@
           <div class="navbox">
               <nav>
                   <ul>
-                      <a href="#"><li>Categories</li></a>
-                      <a href="#"><li>Brands</li></a>
-                      <a href="#"><li>Luxe</li></a>
-                      <a href="#"><li>Nykaa Fashion</li></a>
-                      <a href="#"><li>Beauty Advice</li></a>
+                      <a href="#" class="list-1"><li>Categories</li></a>
+                      <a href="#" class="list-1"><li>Brands</li></a>
+                      <a href="#" class="list-1"><li>Luxe</li></a>
+                      <a href="#" class="list-1"><li>Nykaa Fashion</li></a>
+                      <a href="#" class="list-1"><li>Beauty Advice</li></a>
                   <nav>
               </ul>
           </nav>
       </div>
       <div class="search-box ">
         <div class="search-nyka">
-          <input type="text" placeholder="Search on Nykaa" class="searchtext">
-          <a href="#" class="searchbtn"><i class="fa fa-search"></i></a>
-        </div>
+          <!-- <input type="text" placeholder="Search on Nykaa" class="searchtext">
+          <a href="#" class="searchbtn"><i class="fa fa-search"></i></a>-->
+          <select class="dropdown">
+            <option>Search on Nykaa</option>
+            <option>Nykaa Cosmetics</option>
+            <option>Nykaa Cosmetics Liquid Lipstick</option>
+            <option>Face Masks</option>  
+            <option>Hand sanitiseres</option>
+            <option>Lipstick</option>
+        </select>
+        </div> 
         <div class="sign-in">
           <div class="button-1">
             <button class="button">Sign in</button>
@@ -599,38 +618,11 @@
       <p class="footertext">&copy;2022 Nykaa E-Retail Pvt. Ltd. All Rights Reserved.</p>
   </div>
       
-  <div id="coupon">
-    <button onclick="closecoupon()">&times</button>
-  </div>
-
-  <script>
-    window.onload=loadcoupon()
-
-    /*let a=document.getElementById('in');
-  let b=document.getElementById('out');
-
-  function clickloction (){
-    if (navigator.geolocation){
-      navigator.geolocation.getCurrentPosition(showposition)
-    }else{
-      a.innerText ="Geo not supported"
-    }
-    function showposition(data){
-      console.log(data);
-      let lat=data.coords.latitude;
-      let long=data.coords.longitude;
-      let out=`latitude is ${lat} & longitude is ${long}`
-      a.innerText=out
-
-    }
-
-  }*/
-
-  </script>
+  
+  <script src="index.js"></script>
 
 
  
-  
   
 
   </body>

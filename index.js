@@ -1,13 +1,10 @@
-function loadcoupon(){
-    document.getElementById('coupon').style.visibility='visible';
-    document.getElementById('coupon-clr').style.opacity='0.7';
 
-}
-function closecoupon(){
-    document.getElementById('coupon').style.visibility='hidden';
- document.getElementById('coupon-clr').style.opacity='1';
+let popupCloseButton = document.querySelector("#popupClose");
+popupCloseButton.addEventListener("click", () => {
+    document.querySelector("#coupon-header").style.display = "none";
+});
 
-}
+
 
 /*Light & dark mode*/
 const clormode=()=>{
@@ -18,6 +15,3 @@ const clormode=()=>{
 
 
 
-  
-
-    
